@@ -1,8 +1,9 @@
 import React from 'react'
 import Pc from '../assets/pc.png'
+import circle2 from '../assets/circle2.svg'
 function Home() {
   return (
-    <div className='mt-[10rem]'>
+    <div className='relative mt-[10rem]'>
         <div className='section flex justify-between m-12'>
           <div className='info-side max-w-sm flex flex-col gap-6 ml-16'>
            <div className=' relative text-[50px] font-bold'>Discover And Witness AI Works</div>
@@ -15,7 +16,11 @@ function Home() {
           <div className='img-side -mt-20'>
           <img src={Pc} alt="" />
           </div>
+          
         </div>
+        <img className=' max-w-[50vw] absolute left-[50%] -top-[45%] overflow-x-hidden' src={circle2}/>
+       
+
     </div>
   )
 }
