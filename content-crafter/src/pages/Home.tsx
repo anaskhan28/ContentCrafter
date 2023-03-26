@@ -6,6 +6,7 @@ import phone from '../assets/phone.png';
 import shop from '../assets/shop.png';
 import email from '../assets/email.png';
 import social from '../assets/social.png';
+import {Link} from 'react-router-dom';
 function Home() {
   return (
     <div className='relative'>
@@ -15,8 +16,8 @@ function Home() {
            <div className=' relative text-[50px] font-bold'>Discover And Witness AI Works</div>
            <p>Automated Content Generation for Web and Social Media.</p>
            <div className='flex gap-6 cursor-pointer'>
-           <button className=' bg-[#8F8FDB] rounded-full pr-12 pl-12 pt-[15px] pb-[15px]'>SIGN UP</button>
-           <button className='border-solid rounded-full border-2 pr-8 pl-8 pt-[15px] pb-[15px] '>LEARN MORE</button>
+           <button className=' bg-[#8F8FDB] rounded-full pr-12 pl-12 pt-[15px] pb-[15px]'><Link to='/usecase'>THE TRUTH</Link></button>
+           <button className='border-solid rounded-full border-2 pr-8 pl-8 pt-[15px] pb-[15px] '><Link to='/about'>LEARN MORE</Link></button>
            </div>
           </div>
           <div className='img-side -mt-20'>
@@ -32,7 +33,7 @@ function Home() {
           <span className='text-[#84CECF] text-xl pb-4'>Get Started</span>
           <p className='text-[50px] font-bold max-w-md tracking-tight'>Grow your portfolio with the AI enrich content</p>
           <p className='max-w-[350px] pb-8'>The easiest way to create a content with an one click. Just type the word! </p>
-          <button className=' rounded-full bg-[#8F8FDB] pr-12 pl-12 pt-[15px] pb-[15px] '>GET STARTED</button>
+          <button className=' rounded-full bg-[#8F8FDB] pr-12 pl-12 pt-[15px] pb-[15px] '><Link to='/usecase'>GET STARTED</Link></button>
 
           </div>
        </section>
@@ -42,7 +43,7 @@ function Home() {
           <span className='text-[#84CECF] text-xl pb-4'>Content</span>
           <p className='text-[50px] font-bold max-w-md tracking-tight'>Create Content easily for anything</p>
           <p className='max-w-[350px] pb-8'>The easiest way to create a content with an one click. Just type the word! </p>
-          <button className=' rounded-full bg-[#8F8FDB] pr-12 pl-12 pt-[15px] pb-[15px] '>JUST A CLICK</button>
+          <button className=' rounded-full bg-[#8F8FDB] pr-12 pl-12 pt-[15px] pb-[15px] '><Link to='/usecase'>JUST A CLICK</Link></button>
 
           </div>
           <img className='mt-[-150px]' src={phone}/>
@@ -60,7 +61,7 @@ function Home() {
           <p className='max-w-[350px]  text-center pb-8'>
           Write a clear engaging ideas and blogs to  
           generate the outline to help you to get started using AI assistant. </p>
-          <button className='  bg-[#8F8FDB] max-w-12 h-auto p-2 rounded-full  relative bottom-4 left-28'>Generate Ideas</button>
+          <button className='  bg-[#8F8FDB] max-w-12 h-auto p-2 rounded-full  relative bottom-4 left-28'>Generate with AI</button>
        </div>
        <div className= 'max-w-[400px] h-[200px] rounded-lg bg-[#252D62]'>
        <img className=' mix-blend-luminosity relative bottom-12 left-28 ' src={email}/>
@@ -68,7 +69,7 @@ function Home() {
           <p className='max-w-[350px]  text-center pb-8'>
           Write a clear engaging ideas and blogs to  
           generate the outline to help you to get started using AI assistant. </p>
-          <button className='  bg-[#8F8FDB] max-w-12 h-auto p-2 rounded-full  relative bottom-4 left-28'>Generate Ideas</button>
+          <button className='  bg-[#8F8FDB] max-w-12 h-auto p-2 rounded-full  relative bottom-4 left-28'><Link to='/email'>Generate with AI</Link></button>
        </div>
        <div className= 'max-w-[400px] h-[200px] rounded-lg bg-[#252D62]'>
        <img className=' mix-blend-luminosity relative bottom-12 left-28 ' src={social}/>
@@ -76,7 +77,7 @@ function Home() {
           <p className='max-w-[350px]  text-center pb-8'>
           Write a clear engaging ideas and blogs to  
           generate the outline to help you to get started using AI assistant. </p>
-          <button className='  bg-[#8F8FDB] max-w-12 h-auto p-2 rounded-full  relative bottom-4 left-28'>Generate Ideas</button>
+          <button className='  bg-[#8F8FDB] max-w-12 h-auto p-2 rounded-full  relative bottom-4 left-28'>Generate with AI</button>
        </div>
        </div>
        </section>
