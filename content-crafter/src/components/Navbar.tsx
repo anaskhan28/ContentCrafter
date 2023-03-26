@@ -1,7 +1,8 @@
 import React from 'react'
 import circle from '../assets/circle.svg'
+import {Link} from 'react-router-dom';
 function Navbar() {
-    const links = ['usecase', 'introduction', 'about', 'login']
+    
     return (
         <div className="relative">
         <img className="absolute -top-20" src={circle}/>
@@ -11,13 +12,15 @@ function Navbar() {
           
           <div className=' cursor-pointer font-bold text-lg relative m-4'>ContentCrafter</div>
           <div className='flex gap-8'>
-          {links.map((link,index) =>(
-              <ol className='cursor-pointer m-4'  key={index}>
-                  <li >{link}</li>
+          
+              <ol className='cursor-pointer m-4  gap-8 flex flex-row'>
+                  <li><Link to='/'>home</Link></li>
+                  <li ><Link to='/usecase'>usecase</Link></li>
+                  <li ><Link to='/about'>about</Link></li>
               </ol>
               
          
-          ))}
+       
         </div>
       
       </div>

@@ -26,7 +26,7 @@ function Home() {
         </section>
     
        
-       <section className='flex justify-between align-baseline'>
+       <section className='flex justify-between align-baseline mt-24'>
         <img className='' src={boy}/>
           <div className='flex-col pt-20 pr-20'>
           <span className='text-[#84CECF] text-xl pb-4'>Get Started</span>
