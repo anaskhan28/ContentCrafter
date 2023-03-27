@@ -7,6 +7,7 @@ import shop from '../assets/shop.png';
 import email from '../assets/email.png';
 import social from '../assets/social.png';
 import {Link} from 'react-router-dom';
+import ServiceCard from '../components/Card';
 function Home() {
   return (
     <div className='relative'>
@@ -55,30 +56,24 @@ function Home() {
        <div className='text-[#84CECF] text-lg pb-4'>CREATE</div>
        <p className='text-[50px] font-bold max-w-lg text-center tracking-tight leading-normal'>Awesome Content Simplified</p>
        <div className='flex flex-row gap-8 mt-20'>
-       <div className= 'max-w-[400px] h-[200px] rounded-lg bg-[#252D62]'>
-       <img className=' mix-blend-luminosity relative bottom-12 left-28 ' src={shop}/>
-       <p className='text-[20px] tracking-wide text-center -mt-10'>Business letters</p>
-          <p className='max-w-[350px]  text-center pb-8'>
-          Write a clear engaging ideas and blogs to  
-          generate the outline to help you to get started using AI assistant. </p>
-          <button className='  bg-[#8F8FDB] max-w-12 h-auto p-2 rounded-full  relative bottom-4 left-28'>Generate with AI</button>
-       </div>
-       <div className= 'max-w-[400px] h-[200px] rounded-lg bg-[#252D62]'>
-       <img className=' mix-blend-luminosity relative bottom-12 left-28 ' src={email}/>
-       <p className='text-[20px] tracking-wide text-center -mt-10'>Cold Emails</p>
-          <p className='max-w-[350px]  text-center pb-8'>
-          Write a clear engaging ideas and blogs to  
-          generate the outline to help you to get started using AI assistant. </p>
-          <button className='  bg-[#8F8FDB] max-w-12 h-auto p-2 rounded-full  relative bottom-4 left-28'><Link to='/email'>Generate with AI</Link></button>
-       </div>
-       <div className= 'max-w-[400px] h-[200px] rounded-lg bg-[#252D62]'>
-       <img className=' mix-blend-luminosity relative bottom-12 left-28 ' src={social}/>
-       <p className='text-[20px] tracking-wide text-center -mt-10'>Social Media</p>
-          <p className='max-w-[350px]  text-center pb-8'>
-          Write a clear engaging ideas and blogs to  
-          generate the outline to help you to get started using AI assistant. </p>
-          <button className='  bg-[#8F8FDB] max-w-12 h-auto p-2 rounded-full  relative bottom-4 left-28'>Generate with AI</button>
-       </div>
+       <ServiceCard
+        image={shop}
+        title='Keyword Extractor'
+        description='Write a clear engaging ideas and blogs to generate the outline to help you to get started using AI assistant.'
+        link='/extractor'
+      />
+      <ServiceCard
+        image={email}
+        title='Sentiment Analyzer'
+        description='Write a clear engaging ideas and blogs to generate the outline to help you to get started using AI assistant.'
+        link='/sentiment'
+      />
+      <ServiceCard
+        image={social}
+        title='Text Summarizer'
+        description='Write a clear engaging ideas and blogs to generate the outline to help you to get started using AI assistant.'
+        link='/summarize'
+      />
        </div>
        </section>
        
