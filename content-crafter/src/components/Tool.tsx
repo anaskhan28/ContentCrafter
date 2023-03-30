@@ -7,12 +7,13 @@ import ResultField from "./ResultField";
 interface ToolProps {
   prompt: string;
   model: string;
+  max_tokens: number,
   heading: string;
   imageSrc: string;
   placeholder: string;
 }
 
-function Tool({ prompt, model, heading, imageSrc, placeholder }: ToolProps) {
+function Tool({ prompt, model, max_tokens, heading, imageSrc, placeholder }: ToolProps) {
   const [keywords, setKeywords] = useState('');
   const [loading, setLoading] = useState(false);
   const [text, setText] = useState("");
@@ -27,6 +28,9 @@ function Tool({ prompt, model, heading, imageSrc, placeholder }: ToolProps) {
     const data = {
       model: model,
       prompt: prompt + '\n\n'+ text,
+      temperature: 0.5,
+      max_tokens: max_tokens,
+      frequency_penalty: 0.8,
     };
     setLoading(true);
 
@@ -54,7 +58,7 @@ function Tool({ prompt, model, heading, imageSrc, placeholder }: ToolProps) {
          {heading}
         </h1>
         <img
-          className="relative flex justify-start items-start -mt-10"
+          className="relative flex justify-start max-w-[150px] items-start -mt-10"
           src={imageSrc}
         />
         <div className=" relative flex flex-col justify-center items-center -mt-16">

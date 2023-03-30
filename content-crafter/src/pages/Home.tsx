@@ -12,17 +12,17 @@ function Home() {
   return (
     <div className='relative'>
 
-        <section className='section flex justify-between m-12 mt-32'>
+        <section className='section flex flex-col justify-between m-12 mt-32  md:flex-row'>
           <div className='info-side max-w-sm flex flex-col gap-6 ml-16'>
-           <div className=' relative text-[50px] font-bold'>Discover And Witness AI Works</div>
+           <div className=' relative text-[30px] md:text-[50px] font-bold'>Discover And Witness AI Works</div>
            <p>Automated Content Generation for Web and Social Media.</p>
            <div className='flex gap-6 cursor-pointer'>
-           <button className=' bg-[#8F8FDB] rounded-full pr-12 pl-12 pt-[15px] pb-[15px]'><Link to='/usecase'>THE TRUTH</Link></button>
-           <button className='border-solid rounded-full border-2 pr-8 pl-8 pt-[15px] pb-[15px] '><Link to='/about'>LEARN MORE</Link></button>
+           <button className='bg-[#8F8FDB] rounded-full pr-8 pl-8 pt-[15px] pb-[15px] text-sm sm:text-base'><Link to='/usecase'>THE TRUTH</Link></button>
+        <button className='border-solid rounded-full border-2 pr-6 pl-6 pt-[15px] pb-[15px] text-sm sm:text-base'><Link to='/about'>LEARN MORE</Link></button>
            </div>
           </div>
           <div className='img-side -mt-20'>
-          <img src={Pc} alt="" />
+          <img className='md:w-full w-[100px] mx-auto ' src={Pc} alt="" />
           </div>
           {/* <img className=' max-w-[50vw] absolute left-[50%] -top-[45%] overflow-x-hidden' src={circle2}/> */}
         </section>
