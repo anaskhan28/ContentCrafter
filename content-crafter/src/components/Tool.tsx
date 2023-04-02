@@ -3,7 +3,7 @@ import axios from 'axios';
 import InputField from "./InputField";
 import Button from "./Button";
 import ResultField from "./ResultField";
-
+import { Loader, Placeholder } from 'rsuite';
 interface ToolProps {
   prompt: string;
   model: string;
@@ -51,8 +51,12 @@ function Tool({ prompt, model, max_tokens, heading, imageSrc, placeholder }: Too
   }
 
 
+ 
+ 
+
   return (
     <div className="flex justify-center items-center">
+    
       <div className="h-[600px] w-[1000px] rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500">
         <h1 className="underline text-center mt-4 relative text-2xl font-bold">
          {heading}
