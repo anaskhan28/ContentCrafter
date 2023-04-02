@@ -4,13 +4,14 @@ import shop from '../assets/shop.png';
 import email from '../assets/email.png';
 import social from '../assets/social.png';
 import ServiceCard from '../components/Card';
+import Footer from '../components/Footer';
 function usecase() {
   return (
     <div>
        <section className='shop flex flex-col justify-center items-center mb-44'>
-       <div className='text-[#84CECF] text-lg pb-4'>USECASE</div>
-       <p className='text-[50px] font-bold max-w-lg text-center tracking-tight leading-normal'>Awesome Content Tools</p>
-       <div className='grid grid-cols-3 gap-[8rem] mb-20 mt-20'>
+       <div className='text-[#84CECF] md:text-xl text-sm pb-4'>USECASE</div>
+       <p className='text-[30px] md:text-[50px] font-bold max-w-lg text-center tracking-tight leading-normal'>Awesome Content Tools</p>
+       <div className='grid md:grid-cols-3 gap-[8rem] mb-20 mt-20'>
        <ServiceCard
         image={shop}
         title='Keyword Extractor'
@@ -49,6 +50,7 @@ function usecase() {
       />
        </div>
        </section>
+       <Footer/>
     </div>
   )
 }
