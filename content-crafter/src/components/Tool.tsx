@@ -3,7 +3,6 @@ import axios from 'axios';
 import InputField from "./InputField";
 import Button from "./Button";
 import ResultField from "./ResultField";
-import { Loader, Placeholder } from 'rsuite';
 interface ToolProps {
   prompt: string;
   model: string;
