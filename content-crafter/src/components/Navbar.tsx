@@ -43,16 +43,16 @@ const toggleMenu = () =>{
           <ol
             className={`${
               isOpen ? 'flex flex-col items-center ml-4 gap-4 mt-6' : 'hidden'
-            } md:flex md:flex-row md:gap-8 cursor-pointer md:mt-4`}
+            } md:flex md:flex-row md:gap-8 cursor-pointer md:mt-4 `}
           >
             <li>
-              <Link to="/">home</Link>
+              <Link className='hover:underline' to="/">home</Link>
             </li>
             <li>
-              <Link to="/usecase">usecase</Link>
+              <Link className='hover:underline'  to="/usecase">usecase</Link>
             </li>
             <li>
-              <Link to="/about">about</Link>
+              <Link className='hover:underline'  to="/about">about</Link>
             </li>
           </ol>
         </div>
