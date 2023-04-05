@@ -1,4 +1,5 @@
 # ContentCrafter
+![Website Image](demo1.png)
 Welcome to the ContentCrafter repository! This repository contains a tool that helps content creators generate ideas for articles, blog posts, and other types of content.
 
 ## Setup
