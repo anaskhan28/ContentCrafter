@@ -32,7 +32,7 @@ function usecase() {
       />
        <ServiceCard
         image={shop}
-        title='Spell-checkingr'
+        title='Spell-Checking'
         description='Correct the spelling errors in the your text and get feedback too.'
         link='/checking'
       />
